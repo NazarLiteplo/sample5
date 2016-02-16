@@ -8,7 +8,7 @@
         
         <nav>
             <a href="index.html">Home</a>
-            <!--<a href="#tab">Table</a> -->
+            <a href= "#f">Form</a> 
         </nav>
         
         <table border>
@@ -52,6 +52,30 @@
             <li>third item</li>
             <li>fourth item</li>
         </ul>
+        
+        <p><h3>Form:</h3></p>
+        <form method="POST" action"" id="f">
+            <fieldset>
+                <legend>Info</legend>
+                <p><label>name<input type="text" required name="name"/></label></p>
+                <p><label>e-mail <input type="text" name="mail"/></label></p>
+                <p><label for="phone">phone</label><input type="text" name="phone" id="phone" pattern= "[0-9] {10}" /></p>
+                <p><label for="password">password</label><input type="password" name="password" id="password" /></p>
+                
+                    <label for="men">men</label><input type="radio" name="radio1" id="men" value="man" checked/>
+                    <label for="women">women</label><input type="radio" name="radio1" id="women" value="women"/>
+                    
+                    <p>
+                    <label>One<input type="checkbox" name="cb1" checked/></label>
+                    <label>Two<input type="checkbox" name="cb2"/></label>
+                    <label>Three<input type="checkbox" name="cb3"/></label>
+                    </p>
+               <p> <label for="comment">comment:</label>
+                <textarea name="comment" id="comment" cols="30" rows="6"></textarea>
+                </p>
+            </fieldset>
+        </form>
+        
         
         
         <footer>
