@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href="style.css" rel="stylesheet" >
+        
         <title>Lecture 3</title>
+        
     </head>
     <body>
         <header><h1>Homework</h1></header>
@@ -11,9 +14,10 @@
             <a href= "#f">Form</a> 
         </nav>
         
-        <section>
+        <section id="table">
+            <hr>
             <header><h2>Table:</h2></header>
-            <table border>
+            <table border="1">
                 <caption>Table</caption>
                 <thead>
                     <tr >
@@ -40,7 +44,7 @@
         </section>
         
         <article>
-            <section>
+            <section class="list">
                 <h3>ordered list:</h3>
                 <ol>
                     <li>First item.</li>
@@ -48,7 +52,7 @@
                     <li>Third item.</li>
                 </ol>
             </section>
-            <section>
+            <section class="list"            >
                 <h3>unordered lists:</h3>
                 <ul>
                     <li>first item</li>
@@ -56,30 +60,32 @@
                     <li>third item</li>
                     <li>fourth item</li>
                 </ul>
+                
             </section>
+            <div class="clear"></div></div>
         </article>
         
         <h3>Form:</h3>
         <form method="POST" action"" id="f" name="form1">
             <fieldset>
                 <legend>Info</legend>
-                <p><label>name<input type="text" required name="name"/></label></p>
-                <p><label>e-mail <input type="text" name="mail"/></label></p>
-                <p><label for="phone">phone</label><input type="text" name="phone" id="phone" required pattern= "[0-9]{10}" /></p>
+                <p class="lname"><label for="name">name</label> <input type="text" required name="name" id="name"/></p>
+                <p><label for="mail">e-mail</label>  <input type="text" name="mail" id="mail"/></label></p>
+                <p><label for="phone">phone</label><input type="text" name="phone" id="phone" required pattern= "[0-9] {10}" /></p>
                 <p><label for="password">password</label><input type="password" name="password" id="password" /></p>
-                
-                    <label for="men">men</label><input type="radio" name="radio1" id="men" value="man" checked/>
-                    <label for="women">women</label><input type="radio" name="radio1" id="women" value="women"/>
+                <p><label for="men">men</label><input type="radio" name="radio1" id="men" value="man" checked/>
+                <label for="women">women</label><input type="radio" name="radio1" id="women" value="women"/></p>
                     
-                    <p>
+                <p>
                     <label>One<input type="checkbox" name="cb1" checked/></label>
                     <label>Two<input type="checkbox" name="cb2"/></label>
                     <label>Three<input type="checkbox" name="cb3"/></label>
-                    </p>
+                </p>
                <p> <label for="comment">comment:</label>
                 <textarea name="comment" id="comment" cols="30" rows="6" placeholder="Enter your comment"></textarea>
                 </p>
-                <button name="b1">Send</button>
+                
+                <p><input class="button" type="submit" name="submit" value="Send"/></p>
             </fieldset>
         </form>
         
